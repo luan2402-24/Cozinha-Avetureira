@@ -291,7 +291,7 @@ const CATEGORIES = [
         desc: 'Camadas de velvet com cream cheese',
         img: 'https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=400&q=80'
       },
-      // ➕ Adicione mais bolos aqui
+      // 
     ]
   },
 
@@ -314,11 +314,11 @@ const CATEGORIES = [
         desc: 'Massa amanteigada com catupiry',
         img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80'
       },
-      // ➕ Adicione mais salgados aqui
+      // 
     ]
   },
 
-  // ➕ Adicione mais categorias abaixo (copie o bloco acima):
+  // 
   // {
   //   id: 'bebidas',
   //   label: 'Bebidas',

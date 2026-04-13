@@ -6,3 +6,8 @@
 1- Feita página de produtos utlizando HTML, CSS E JS
 2- Adicionado cards interativos para separação dos produtos
 3- Adicionado footer com icones clicáveis, prontos para receber a API do whatsapp, facebook e Instagram
+
+
+12/04
+
+Removi icones que estavam poluíndo visualmente o footer do site, e dentro das categorias, adicionei a base para que possam receber novos produtos.

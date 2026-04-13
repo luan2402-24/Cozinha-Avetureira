@@ -260,13 +260,13 @@ const CATEGORIES = [
     id: 'doces',
     label: 'Doces',
     emoji: '🍫',
-    img: 'https://images.unsplash.com/photo-1548907040-4baa42d10919?w=600&q=80',
+    img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
         name: 'Brigadeiro Tradicional',
         price: '5,00',
         desc: 'Receita clássica com granulado belga',
-        img: 'https://images.unsplash.com/photo-1541599468348-e96984315921?w=400&q=80'
+        img: '' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
       },
       {
         name: 'Trufa de Maracujá',
@@ -283,24 +283,24 @@ const CATEGORIES = [
     id: 'bolos',
     label: 'Bolos',
     emoji: '🎂',
-    img: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80',
+    img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
         name: 'Bolo Red Velvet',
         price: '85,00',
         desc: 'Camadas de velvet com cream cheese',
-        img: 'https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=400&q=80'
+        img: '' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
       },
       // 
     ]
   },
 
-  // ─── SALGADOS ────────────────────────────────────────────────
+  // ─── SALGADOS ─────
   {
     id: 'salgados',
     label: 'Salgados',
     emoji: '🥐',
-    img: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80',
+    img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
         name: 'Coxinha de Frango',

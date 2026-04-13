@@ -262,16 +262,10 @@ const CATEGORIES = [
     img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
-        name: 'Brigadeiro Tradicional',
-        price: '5,00',
-        desc: 'Receita clássica com granulado belga',
+        name: 'Adicionar item',
+        price: '0,00',
+        desc: 'PROJETO AINDA ESTÁ SENDO FEITO (Otavio)',
         img: '' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-      },
-      {
-        name: 'Trufa de Maracujá',
-        price: '7,00',
-        desc: 'Recheio cremoso de maracujá',
-        img: ''
       },
       
     ]
@@ -285,11 +279,12 @@ const CATEGORIES = [
     img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
-        name: 'Bolo Red Velvet',
-        price: '85,00',
-        desc: 'Camadas de velvet com cream cheese',
+        name: 'ADICIONAR ITEM',
+        price: '00,00',
+        desc: 'PROJETO AINDA ESTÁ SENDO FEITO (Otavio)',
         img: '' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
       },
+      
       // 
     ]
   },
@@ -302,31 +297,14 @@ const CATEGORIES = [
     img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
     products: [
       {
-        name: 'Coxinha de Frango',
-        price: '6,00',
-        desc: 'Massa fina, recheio generoso',
+        name: 'ADICIONAR ITEM',
+        price: '00,00',
+        desc: 'PROJETO AINDA ESTÁ SENDO FEITO (Otavio)',
         img: ''
-      },
-      {
-        name: 'Empada de Camarão',
-        price: '9,00',
-        desc: 'Massa amanteigada com catupiry',
-        img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80'
       },
       // 
     ]
   },
-
-  // 
-  // {
-  //   id: 'bebidas',
-  //   label: 'Bebidas',
-  //   emoji: '🥤',
-  //   img: '',
-  //   products: [
-  //     { name: 'Limonada Suíça', price: '12,00', desc: '', img: '' },
-  //   ]
-  // },
 
 ];
 

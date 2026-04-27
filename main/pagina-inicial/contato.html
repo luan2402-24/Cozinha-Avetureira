@@ -1,0 +1,213 @@
+<!-- ===== CONTATO COMPLETO ===== -->
+<section id="Contato" class="section active">
+
+  <style>
+    /* ================== ROOT (SUAS CORES) ================== */
+    :root {
+      --branco:        #ffffff;
+      --vinho:         #7A1018;
+      --mostarda:      #D39B36;
+      --creme:         #F0ECE6;
+      --azul:          #23374B;
+      --marrom-escuro: #4A2F18;
+      --preto:         #000000;
+
+      --warm-beige:    #e8dece;
+      --dark-brown:    #2c1a0e;
+      --medium-brown:  #6b3f1f;
+      --gold:          #c8922a;
+      --rust:          #b85c2c;
+      --navy:          #1e2d40;
+      --text:          #3a2310;
+      --card-bg:       #fffdf8;
+      --shadow:        rgba(44, 26, 14, 0.12);
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--creme);
+      color: var(--text);
+    }
+
+    /* ================== HEADER ================== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: var(--creme);
+      border-bottom: 1px solid var(--warm-beige);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    header img {
+      height: 90px;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--marrom-escuro);
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    /* ================== HERO ================== */
+    .hero {
+      padding: 52px 48px 32px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--dark-brown);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--medium-brown);
+    }
+
+    /* ================== CONTATO ================== */
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      padding: 20px 48px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--warm-beige);
+      border-radius: 6px;
+      padding: 22px;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px var(--shadow);
+      border-color: var(--gold);
+    }
+
+    .contact-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--dark-brown);
+    }
+
+    .contact-card p {
+      color: var(--medium-brown);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* ================== FOOTER ================== */
+    footer {
+      background: var(--navy);
+      color: #aab4c0;
+      padding: 28px 48px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #aab4c0;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+
+  <!-- HEADER -->
+  <header>
+    <img src="../fotos_icons/logo_com_fundo.png" alt="Cozinha Aventureira">
+    <nav>
+      <a onclick="showPage('home')">Início</a>
+      <a onclick="showPage('produtos')">Produtos</a>
+      <a onclick="showPage('Sobre')">Sobre</a>
+      <a onclick="showPage('Contato')">Contato</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <div class="hero">
+    <h1>Contato</h1>
+    <p>Fale com a gente 💬</p>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2>📍 Endereço</h2>
+      <p>São Roque de Minas - MG</p>
+    </div>
+
+    <div class="contact-card">
+      <h2>📞 Telefone</h2>
+      <p>(11) 99999-9999</p>
+    </div>
+
+    <div class="contact-card">
+      <h2>📧 Email</h2>
+      <p>contato@site.com</p>
+    </div>
+
+   
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Termos</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Redes Sociais</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><img src="../fotos_icons/instagram.png"></a>
+      <a href="#"><img src="../fotos_icons/facebook.png"></a>
+      <a href="#"><img src="../fotos_icons/whatsapp.png"></a>
+    </div>
+  </footer>
+
+</section>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cozinha Aventureira — Produtos</title>
+    <link rel="icon" href="../fotos_icons/logo_com_fundo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --branco: #ffffff;
+            --vinho: #7A1018;
+            --mostarda: #D39B36;
+            --creme: #F0ECE6;
+            --azul: #23374B;
+            --marrom: #A56E3C;
+            --marrom-escuro: #4A2F18;
+            --preto: #000000;
+            --vinho-escuro: #5A1419;
+        }
+
+        /*(remove estilos padrão do navegador) */
+        * {
+            margin: 0;
+            /* remove margem padrão */
+            padding: 0;
+            /* remove espaçamento interno padrão */
+            box-sizing: border-box;
+            /* facilita cálculo de tamanho */
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--creme);
+            color: var(--preto);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        header {
+            border-bottom: solid var(--branco) 5px;
+            background: var(--creme);
+            display: flex;
+            justify-content: space-between;
+            /* logo esquerda, menu direita */
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--marrom-escuro);
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--mostarda);
+        }
+
+        .logo-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--branco);
+            border: solid var(--mostarda) 3px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon img {
+            width: 70%;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(0.8);
+            /* escurece levemente */
+        }
+
+        main {
+            border: 0px solid white;
+            /*utilização para futura implementação */
+        }
+
+        footer {
+            background: var(--azul);
+            color: var(--branco);
+            padding: 28px 48px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--branco);
+            text-decoration: none;
+            transition: color 0.2s;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links a:hover {
+            color: var(--mostarda);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--branco);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color .2s;
+        }
+
+        .social-icons a:hover {
+            border-color: var(--mostarda);
+        }
+
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .main {
+            border: var(--azul) solid 5px;
+            margin: 5px;
+            justify-content: space-between;
+            display: flex;
+            gap: 40px;
+        }
+
+        .main_foto {
+            border: var(--azul) solid 5px;
+            margin: 40px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main_endereco {
+            border: var(--azul) solid 5px;
+            margin: 40px;
+            padding: 5px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-icon">
+            <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
+        </div>
+
+
+        <nav>
+            <a href="../pagina-inicial/produtos.html">Produtos</a>
+            <a href="#">Vitrine</a>
+            <a href="#">Sobre</a>
+            <a href="../pagina-inicial/contato.html">Contatos</a>
+        </nav>
+    </header>
+
+    <img src="../fotos_icons/banner_pg_ini.png" alt="banner" class="banner">
+
+    <main>
+        <div class="main">
+            <div class="main_foto">
+                <h2>Local para futura imagem da loja</h2>
+                <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
+            </div>
+            <div class="main_endereco">
+                <h2>Local para futuro endereço da loja</h2>
+            </div>
+            <div class="main_foto">
+                <h2>Local para futura imagem da loja</h2>
+                <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Redes Sociais</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#">
+                <img src="../fotos_icons/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="#">
+                <img src="../fotos_icons/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="#">
+                <img src="../fotos_icons/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -30,6 +30,12 @@ Removi icones que estavam poluíndo visualmente o footer do site, e dentro das c
 
 5 - Alteração no icone da nav bar deixando o mesmo redondo, alterações em partes do código.
 
+27/04/26
+
+1 - Início da padronização do footer, header e root(variaveis de cores) na pagina produto.html
+
+2 - Continuação da padronização footer, header e root(variaveis de cores) na pagina produto.html
+
 ---- PARTE FEITA POR LUAN ----
 
 27/04/26

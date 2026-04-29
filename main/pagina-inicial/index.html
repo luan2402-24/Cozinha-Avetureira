@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozinha Aventureira — Produtos</title>
-    <link rel="icon" href="../fotos_icons/logo_com_fundo.png" type="image/png">
+    <link rel="icon" href="../fotos_icons/logo_circular.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --branco: #ffffff;
             --vinho: #7A1018;
-            --mostarda: #D39B36;
-            --creme: #F0ECE6;
-            --azul: #23374B;
-            --marrom: #A56E3C;
-            --marrom-escuro: #4A2F18;
-            --preto: #000000;
             --vinho-escuro: #5A1419;
+            --creme: #F0ECE6;
+            --marrom-escuro: #4A2F18;
+            --mostarda: #D39B36;
+            --marrom: #A56E3C;
+            --azul: #23374B;
+            --text: #3a2310;
+            --preto: #000000;
+            --shadow: rgba(44, 26, 14, 0.12);
+            
         }
 
         /*(remove estilos padrão do navegador) */
@@ -32,8 +36,9 @@
         body {
             font-family: 'DM Sans', sans-serif;
             background: var(--creme);
-            color: var(--preto);
+            color: var(--text);
             overflow-x: hidden;
+            min-height: 100vh;
         }
 
         img {
@@ -80,7 +85,6 @@
             background: var(--branco);
             border: solid var(--mostarda) 3px;
             border-radius: 50%;
-
             display: flex;
             align-items: center;
             justify-content: center;

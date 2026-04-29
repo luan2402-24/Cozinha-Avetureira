@@ -36,6 +36,12 @@ Removi icones que estavam poluíndo visualmente o footer do site, e dentro das c
 
 2 - Continuação da padronização footer, header e root(variaveis de cores) na pagina produto.html
 
+28/04/2026
+
+1 - Conclusão da padronização footer, header e root(variaveis de cores) na pagina produto.html
+
+2 - Mudança na página inicial e de produtos, assim fazendo a incrementação dos links corretos para direcionar para página de produtos e etc.
+
 ---- PARTE FEITA POR LUAN ----
 
 27/04/26

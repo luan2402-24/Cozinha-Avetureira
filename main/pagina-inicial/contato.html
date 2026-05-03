@@ -1,26 +1,25 @@
-<!-- ===== CONTATO COMPLETO ===== -->
 <section id="Contato" class="section active">
 
   <style>
     /* ================== ROOT (SUAS CORES) ================== */
     :root {
-      --branco: #ffffff;
-      --vinho: #7A1018;
-      --mostarda: #D39B36;
-      --creme: #F0ECE6;
-      --azul: #23374B;
+      --branco:        #ffffff;
+      --vinho:         #7A1018;
+      --mostarda:      #D39B36;
+      --creme:         #F0ECE6;
+      --azul:          #23374B;
       --marrom-escuro: #4A2F18;
-      --preto: #000000;
+      --preto:         #000000;
 
-      --warm-beige: #e8dece;
-      --dark-brown: #2c1a0e;
-      --medium-brown: #6b3f1f;
-      --gold: #c8922a;
-      --rust: #b85c2c;
-      --navy: #1e2d40;
-      --text: #3a2310;
-      --card-bg: #fffdf8;
-      --shadow: rgba(44, 26, 14, 0.12);
+      --warm-beige:    #e8dece;
+      --dark-brown:    #2c1a0e;
+      --medium-brown:  #6b3f1f;
+      --gold:          #c8922a;
+      --rust:          #b85c2c;
+      --navy:          #1e2d40;
+      --text:          #3a2310;
+      --card-bg:       #fffdf8;
+      --shadow:        rgba(44, 26, 14, 0.12);
     }
 
     body {
@@ -163,10 +162,10 @@
   <header>
     <img src="../fotos_icons/logo_com_fundo.png" alt="Cozinha Aventureira">
     <nav>
-      <a href="../pagina-inicial/index.html">Início</a>
-      <a href="../pagina-inicial/produtos.html">Produtos</a>
-      <a href="#">Vitrine</a>
-      <a href="#">Sobre</a>
+      <a onclick="showPage('home')">Início</a>
+      <a onclick="showPage('produtos')">Produtos</a>
+      <a onclick="showPage('Sobre')">Sobre</a>
+      <a onclick="showPage('Contato')">Contato</a>
     </nav>
   </header>
 
@@ -192,7 +191,7 @@
       <p>contato@site.com</p>
     </div>
 
-
+   
   </div>
 
   <!-- FOOTER -->

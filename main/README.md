@@ -42,6 +42,13 @@ Removi icones que estavam poluíndo visualmente o footer do site, e dentro das c
 
 2 - Mudança na página inicial e de produtos, assim fazendo a incrementação dos links corretos para direcionar para página de produtos e etc.
 
+03/05/2026
+
+1- Criação da pasta "css" para a padronização de arquivos e mudanças em .css, dessa forma foi criado os arquivos nav_header_footer.css e global.css para que dessa forma possamos manter um padrão em nossas páginas.
+
+2 - Criação do arquivo index.css, dessa forma retirando toda a parte de estilização da página index.html
+
+
 ---- PARTE FEITA POR LUAN ----
 
 27/04/26

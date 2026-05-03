@@ -1,0 +1,38 @@
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+    /* escurece levemente */
+}
+
+main {
+    border: 0px solid white;
+    /*utilização para futura implementação */
+}
+
+.main {
+    border: var(--azul) solid 5px;
+    margin: 5px;
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+}
+
+.main_foto {
+    border: var(--azul) solid 5px;
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main_endereco {
+    border: var(--azul) solid 5px;
+    margin: 40px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

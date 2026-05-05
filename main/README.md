@@ -48,6 +48,18 @@ Removi icones que estavam poluíndo visualmente o footer do site, e dentro das c
 
 2 - Criação do arquivo index.css, dessa forma retirando toda a parte de estilização da página index.html
 
+04/05/2026
+
+1 - Padronização dos Footer, navbar e header de todas as paginas.
+
+2 - Atualização do novo Icnone colher a barra favicon.
+
+3 - Direcionamento correto dos links em todas as páginas, adicionando link para redirecionar para whatsApp(Já com mensagem pronta) e Instagram.
+
+4 - Inserção da logo_icon_colher.png feito pelo Luan.
+
+5 - Correções de CSS para padronização do codigo e assim deixando o mesmo mais bonito visualmente.
+
 
 ---- PARTE FEITA POR LUAN ----
 

@@ -1,8 +1,10 @@
 header {
-    border-bottom: solid var(--branco) 5px;
+    border-bottom: solid var(--marrom) 1px;
+    /*Mudar posteriromente*/
     background: var(--creme);
     display: flex;
     justify-content: space-between;
+    /* logo esquerda, menu direita */
     align-items: center;
     padding: 15px 40px;
 }
@@ -83,21 +85,21 @@ footer {
 .social-icons a {
     width: 40px;
     height: 40px;
-    border: 2px solid var(--branco);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: border-color .2s;
+    transition: border-color .3s;
 }
 
 .social-icons a:hover {
-    border-color: var(--mostarda);
+    border-color: 4px solid var(--mostarda);
+    background-color: var(--mostarda);
 }
 
 .social-icons img {
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }

@@ -26,9 +26,12 @@ body {
     font-family: 'DM Sans', sans-serif;
     background: var(--creme);
     color: var(--text);
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }

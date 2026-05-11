@@ -9,14 +9,16 @@
 
 3- Adicionado footer com icones clicáveis, prontos para receber a API do whatsapp, facebook e Instagram
 
-4- Adicionado mais produtos nas categorias
-
-5- Adicionado um carrossel de imagens manual na página de produtos
-
 
 12/04
 
-Removi icones que estavam poluíndo visualmente o footer do site, e dentro das categorias, adicionei a base para que possam receber novos produtos.
+1- Removi icones que estavam poluíndo visualmente o footer do site, e dentro das categorias, adicionei a base para que possam receber novos produtos.
+
+11/05
+
+1- Adicionado mais produtos nas categorias
+
+2- Adicionado um carrossel de imagens manual na página de produtos
 
 ---- PARTE FEITA POR SAMUEL ----
 

@@ -76,6 +76,10 @@
 
 3 - inserção das fotos interior da loja no site 
 
+12/05/2026
+
+1 - Mudança no estilo dos icones do footer e mudança de cor das bordas da div na pagina inicial.
+
 
 ---- PARTE FEITA POR LUAN ----
 

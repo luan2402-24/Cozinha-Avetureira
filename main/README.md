@@ -68,6 +68,14 @@
 
 5 - Correções de CSS para padronização do codigo e assim deixando o mesmo mais bonito visualmente.
 
+11/05/2026
+
+1 - Inserção da class active a qual mostra a pagina atual na nav bar, o mesmo foi incluido nas três paginas.
+
+2 - Troca dos logos navicon
+
+3 - inserção das fotos interior da loja no site 
+
 
 ---- PARTE FEITA POR LUAN ----
 

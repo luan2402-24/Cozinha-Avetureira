@@ -23,125 +23,133 @@
     }
 
     /* carrossel de imagem */
-  .carrossel-section {
-  position: relative;
-  width: 100%;
-}
+    .carrossel-section {
+      position: relative;
+      width: 100%;
+    }
 
-.carrossel {
-  width: 100%;
-  max-width: 100%; /* ocupa toda a largura */
-  position: relative;
-  border-radius: 0; /* sem borda arredondada no topo da página */
-  overflow: hidden;
-  margin: 0;
-}
+    .carrossel {
+      width: 100%;
+      max-width: 100%;
+      /* ocupa toda a largura */
+      position: relative;
+      border-radius: 0;
+      /* sem borda arredondada no topo da página */
+      overflow: hidden;
+      margin: 0;
+    }
 
-.carrossel-track {
-  display: flex;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
+    .carrossel-track {
+      display: flex;
+      overflow-x: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
 
-.carrossel-track img {
-  width: 100%;
-  flex: none;
-  scroll-snap-align: start;
-  display: block;
-  object-fit: cover;
-  height: 100vh; /* preenche toda a altura da tela */
-  min-height: 200px;
-}
+    .carrossel-track img {
+      width: 100%;
+      flex: none;
+      scroll-snap-align: start;
+      display: block;
+      object-fit: cover;
+      height: 100vh;
+      /* preenche toda a altura da tela */
+      min-height: 200px;
+    }
 
-/* Overlay escuro sobre a imagem para o texto ficar legível */
-.carrossel-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(50, 25, 5, 0.35);
-  z-index: 1;
-  pointer-events: none;
-}
+    /* Overlay escuro sobre a imagem para o texto ficar legível */
+    .carrossel-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(50, 25, 5, 0.35);
+      z-index: 1;
+      pointer-events: none;
+    }
 
-/* Título centralizado sobre a imagem */
-.carrossel-titulo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: #F5F0E8;
-  pointer-events: none;
-}
+    /* Título centralizado sobre a imagem */
+    .carrossel-titulo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      color: #F5F0E8;
+      pointer-events: none;
+    }
 
-.carrossel-titulo h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  color: #F5F0E8;
-  text-shadow: 0 2px 8px rgba(30, 10, 0, 0.4);
-  margin-bottom: 0.5rem;
-}
+    .carrossel-titulo h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #F5F0E8;
+      text-shadow: 0 2px 8px rgba(30, 10, 0, 0.4);
+      margin-bottom: 0.5rem;
+    }
 
-.carrossel-titulo p {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: #EDE5D8;
-  text-shadow: 0 1px 4px rgba(30, 10, 0, 0.4);
-}
+    .carrossel-titulo p {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: #EDE5D8;
+      text-shadow: 0 1px 4px rgba(30, 10, 0, 0.4);
+    }
 
-/* Botões de navegação */
-.carrossel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(245, 240, 232, 0.75);
-  border: 1.5px solid #C4A882;
-  color: #7A4E28;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background 0.2s, color 0.2s;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* Botões de navegação */
+    .carrossel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(245, 240, 232, 0.75);
+      border: 1.5px solid #C4A882;
+      color: #7A4E28;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.2s, color 0.2s;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.carrossel-btn:hover {
-  background: #C4A882;
-  color: #fff;
-}
+    .carrossel-btn:hover {
+      background: #C4A882;
+      color: #fff;
+    }
 
-.carrossel-btn.prev { left: 20px; }
-.carrossel-btn.next { right: 20px; }
+    .carrossel-btn.prev {
+      left: 20px;
+    }
 
-/* Dots */
-.carrossel-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 3;
-}
+    .carrossel-btn.next {
+      right: 20px;
+    }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(245, 240, 232, 0.6);
-  cursor: pointer;
-  border: none;
-  transition: background 0.2s, transform 0.2s;
-}
+    /* Dots */
+    .carrossel-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 3;
+    }
 
-.dot.active {
-  background: #F5F0E8;
-  transform: scale(1.35);
-}
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(245, 240, 232, 0.6);
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .dot.active {
+      background: #F5F0E8;
+      transform: scale(1.35);
+    }
 
     .hero h1 {
       font-family: 'Playfair Display', serif;
@@ -456,32 +464,32 @@
   </header>
 
   <section class="carrossel-section">
-  <div class="carrossel" id="carrossel">
+    <div class="carrossel" id="carrossel">
 
-    <div class="carrossel-track" id="track">
-      <img src="sua-imagem-1.jpg" alt="Produto 1">
-      <img src="sua-imagem-2.jpg" alt="Produto 2">
-      <img src="sua-imagem-3.jpg" alt="Produto 3">
+      <div class="carrossel-track" id="track">
+        <img src="sua-imagem-1.jpg" alt="Produto 1">
+        <img src="sua-imagem-2.jpg" alt="Produto 2">
+        <img src="sua-imagem-3.jpg" alt="Produto 3">
+      </div>
+
+      <!-- Overlay escuro -->
+      <div class="carrossel-overlay"></div>
+
+      <!-- Título centralizado -->
+      <div class="carrossel-titulo">
+        <h1>Nossos Produtos</h1>
+        <p>Escolha uma categoria e veja todas as delícias disponíveis</p>
+      </div>
+
+      <!-- Setas -->
+      <button class="carrossel-btn prev" id="prev">&#8249;</button>
+      <button class="carrossel-btn next" id="next">&#8250;</button>
+
+      <!-- Dots -->
+      <div class="carrossel-dots" id="dots"></div>
+
     </div>
-
-    <!-- Overlay escuro -->
-    <div class="carrossel-overlay"></div>
-
-    <!-- Título centralizado -->
-    <div class="carrossel-titulo">
-      <h1>Nossos Produtos</h1>
-      <p>Escolha uma categoria e veja todas as delícias disponíveis</p>
-    </div>
-
-    <!-- Setas -->
-    <button class="carrossel-btn prev" id="prev">&#8249;</button>
-    <button class="carrossel-btn next" id="next">&#8250;</button>
-
-    <!-- Dots -->
-    <div class="carrossel-dots" id="dots"></div>
-
-  </div>
-</section>
+  </section>
 
   <div class="categories" id="categories"></div>
 
@@ -522,7 +530,7 @@
   </div>
 
   <script>
-    
+
     const CATEGORIES = [
 
       // DOCES 

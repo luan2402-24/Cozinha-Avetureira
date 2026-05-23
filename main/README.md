@@ -20,6 +20,10 @@
 
 2- Adicionado um carrossel de imagens manual na página de produtos
 
+22/05
+
+1- Adicionado imagem nos itens das categorias
+
 ---- PARTE FEITA POR SAMUEL ----
 
 12/04/26

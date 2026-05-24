@@ -4,128 +4,285 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cozinha Aventureira — Produtos</title>
+
+  <title>Cozinha Aventureira — Contato</title>
+
   <link rel="icon" href="../fotos_icons/logo_icon_colher.png" type="image/png">
+
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/nav_header_footer.css">
-  <link rel="stylesheet" href="../css/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================= HERO ================= */
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(rgba(248, 244, 239, 0.94),
+          rgba(248, 244, 239, 0.96)),
+        url("../fotos_icons/banner_pg_ini.png");
+      background-size: cover;
+      background-position: center;
+      padding: 110px 20px 90px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      width: 130px;
+      height: 3px;
+      background: linear-gradient(to right, #d39b36, #f0c77b);
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+    }
+
+    .hero-mini-title {
+      display: inline-block;
+      color: #b88444;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--marrom-escuro);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #8a6233;
+    }
+
+    /* ================= CONTATO ================= */
+
+    .contact-section {
+      padding: 80px 40px 100px;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(211, 155, 54, 0.18);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: 0.35s ease;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--mostarda);
+      box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    .contact-icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #f7e7c5, #fff7eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 8px 20px rgba(211, 155, 54, 0.18);
+    }
+
+    .contact-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      color: var(--marrom-escuro);
+      margin-bottom: 16px;
+    }
+
+    .contact-card p {
+      color: #7d5a35;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .contact-card a {
+      color: #7d5a35;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-card a:hover {
+      color: var(--mostarda);
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #243a52;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+      margin-bottom: 30px;
+    }
+
+    .footer-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #f0c77b;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-icons img {
+      width: 42px;
+      transition: 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: translateY(-5px) scale(1.08);
+    }
+
+    /* ================= RESPONSIVO ================= */
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 90px 20px 75px;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-mini-title {
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+      }
+
+      .contact-section {
+        padding: 60px 20px 80px;
+      }
+
+      .contact-card {
+        padding: 35px 25px;
+      }
+
+      .contact-card h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
-<style>
-  /* ================== HERO ================== */
-  .hero {
-    padding: 52px 48px 32px;
-    text-align: center;
-  }
 
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    color: var(--marrom-escuro);
-    margin-bottom: 10px;
-  }
+<body>
 
-  .hero p {
-    color: var(--marrom);
-  }
+  <header>
+    <div class="logo-icon">
+      <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
+    </div>
 
-  /* ================== CONTATO ================== */
-  .contact-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    padding: 20px 48px 60px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+    <nav>
+      <a href="../pagina-inicial/index.html">Início</a>
+      <a href="../pagina-inicial/produtos.html">Produtos</a>
+      <a href="../pagina-inicial/sobre.html">Sobre</a>
+      <a href="../pagina-inicial/contato.html" class="active">Contatos</a>
+    </nav>
+  </header>
 
-  .contact-card {
-    background: var(--branco);
-    border: 1.5px solid var(--creme);
-    border-radius: 6px;
-    padding: 22px;
-    text-align: center;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
-  }
+  <section class="hero">
+    <span class="hero-mini-title">
+      COZINHA AVENTUREIRA
+    </span>
+    <h1>Contato</h1>
+    <p>
+      Estamos sempre prontos para adoçar seus momentos ✨
+      Entre em contato e faça seu pedido.
+    </p>
+  </section>
 
-  .contact-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px var(--shadow);
-    border-color: var(--mostarda);
-  }
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h2>Endereço</h2>
+        <p>São Roque de Minas — MG</p>
+      </div>
 
-  .contact-card h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: var(--marrom-escuro);
-  }
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h2>Telefone</h2>
+        <p>
+          <a href="tel:+5537998696011">(37) 99869-6011</a>
+        </p>
+      </div>
 
-  .contact-card p {
-    color: var(--marrom);
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-</style>
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h2>Email</h2>
+        <p>
+          <a href="mailto:contato@cozinhaaventureira.com">contato@cozinhaaventureira.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-<header>
-  <div class="logo-icon">
-    <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
-  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Termos de Uso</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Redes Sociais</a>
+    </div>
 
+    <div class="social-icons">
+      <a href="https://www.instagram.com/cozinhaventureira">
+        <img src="../fotos_icons/instagram.png" alt="Instagram">
+      </a>
+      <a href="#">
+        <img src="../fotos_icons/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://wa.me/5537998696011?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais" target="_blank">
+        <img src="../fotos_icons/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+  </footer>
 
-  <nav>
-    <a href="../pagina-inicial/index.html">Início</a>
-    <a href="../pagina-inicial/produtos.html">Produtos</a>
-    <a href="#">Vitrine</a>
-    <a href="#">Sobre</a>
-    <a href="../pagina-inicial/contato.html" class="active">Contatos</a>
-  </nav>
-</header>
+</body>
 
-<!-- CONTEÚDO -->
-<div class="hero">
-  <h1>Contato</h1>
-  <p>Fale com a gente 💬</p>
-</div>
-
-<div class="contact-container">
-  <div class="contact-card">
-    <h2>📍 Endereço</h2>
-    <p>São Roque de Minas - MG</p>
-  </div>
-
-  <div class="contact-card">
-    <h2>📞 Telefone</h2>
-    <p>(11) 99999-9999</p>
-  </div>
-
-  <div class="contact-card">
-    <h2>📧 Email</h2>
-    <p>contato@site.com</p>
-  </div>
-
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-links">
-    <a href="#">Termos de Uso</a>
-    <a href="#">Política de Privacidade</a>
-    <a href="#">Redes Sociais</a>
-  </div>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/cozinhaventureira">
-      <img src="../fotos_icons/instagram.png" alt="Instagram">
-    </a>
-    <a href="#">
-      <img src="../fotos_icons/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://wa.me/553799869601?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais" target="_blank">
-      <img src="../fotos_icons/whatsapp.png" alt="WhatsApp">
-    </a>
-  </div>
-</footer>
-
-</section>
+</html>

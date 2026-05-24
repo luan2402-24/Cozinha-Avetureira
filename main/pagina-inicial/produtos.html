@@ -12,10 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
-    .logo-icon img {
-      width: 70%;
-    }
-
     /* HERO */
     .hero {
       padding: 52px 48px 32px;
@@ -31,10 +27,8 @@
     .carrossel {
       width: 100%;
       max-width: 100%;
-      /* ocupa toda a largura */
       position: relative;
       border-radius: 0;
-      /* sem borda arredondada no topo da página */
       overflow: hidden;
       margin: 0;
     }
@@ -53,11 +47,9 @@
       display: block;
       object-fit: cover;
       height: 100vh;
-      /* preenche toda a altura da tela */
       min-height: 200px;
     }
 
-    /* Overlay escuro sobre a imagem para o texto ficar legível */
     .carrossel-overlay {
       position: absolute;
       inset: 0;
@@ -66,7 +58,6 @@
       pointer-events: none;
     }
 
-    /* Título centralizado sobre a imagem */
     .carrossel-titulo {
       position: absolute;
       top: 50%;
@@ -92,7 +83,6 @@
       text-shadow: 0 1px 4px rgba(30, 10, 0, 0.4);
     }
 
-    /* Botões de navegação */
     .carrossel-btn {
       position: absolute;
       top: 50%;
@@ -125,7 +115,6 @@
       right: 20px;
     }
 
-    /* Dots */
     .carrossel-dots {
       position: absolute;
       bottom: 20px;
@@ -166,7 +155,6 @@
       margin: 0 auto;
     }
 
-    /* Grade de categoria para reorganização automática conforme a largura. */
     .categories {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -187,7 +175,6 @@
     }
 
     .category-card:hover {
-      /* Ganha sombra ao passar o mouse */
       transform: translateY(-6px);
       box-shadow: 0 16px 40px var(--shadow);
       border-color: var(--mostarda);
@@ -234,7 +221,6 @@
       opacity: 1;
     }
 
-    /* QUOTE (Identidade da marca) */
     .quote-section {
       background: var(--creme);
       padding: 52px 48px;
@@ -243,10 +229,6 @@
       justify-content: center;
       gap: 40px;
       flex-wrap: wrap;
-    }
-
-    .quote-icons {
-      font-size: 3.2rem;
     }
 
     .quote-text {
@@ -268,9 +250,7 @@
       color: var(--marrom-escuro);
     }
 
-    /* MODAL */
     .modal-overlay {
-      /* modal com desfoque de fundo (efeito de vidro)*/
       position: fixed;
       inset: 0;
       background: rgba(30, 20, 10, .55);
@@ -301,7 +281,6 @@
         transform: translateY(28px);
         opacity: 0;
       }
-
       to {
         transform: translateY(0);
         opacity: 1;
@@ -337,7 +316,6 @@
       color: var(--mostarda);
     }
 
-    /* PRODUCTS GRID */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
@@ -454,41 +432,29 @@
       <img src="../fotos_icons/logo_sem_fundo.png" alt="Logo">
     </div>
 
-
     <nav>
       <a href="../pagina-inicial/index.html">Início</a>
       <a href="../pagina-inicial/produtos.html" class="active">Produtos</a>
-      <a href="#">Vitrine</a>
-      <a href="#">Sobre</a>
+      <a href="../pagina-inicial/sobre.html">Sobre</a>
       <a href="../pagina-inicial/contato.html">Contatos</a>
     </nav>
   </header>
 
   <section class="carrossel-section">
     <div class="carrossel" id="carrossel">
-
       <div class="carrossel-track" id="track">
         <img src="sua-imagem-1.jpg" alt="Produto 1">
         <img src="sua-imagem-2.jpg" alt="Produto 2">
         <img src="sua-imagem-3.jpg" alt="Produto 3">
       </div>
-
-      <!-- Overlay escuro -->
       <div class="carrossel-overlay"></div>
-
-      <!-- Título centralizado -->
       <div class="carrossel-titulo">
         <h1>Nossos Produtos</h1>
         <p>Escolha uma categoria e veja todas as delícias disponíveis</p>
       </div>
-
-      <!-- Setas -->
       <button class="carrossel-btn prev" id="prev">&#8249;</button>
       <button class="carrossel-btn next" id="next">&#8250;</button>
-
-      <!-- Dots -->
       <div class="carrossel-dots" id="dots"></div>
-
     </div>
   </section>
 
@@ -514,7 +480,7 @@
       <a href="#">
         <img src="../fotos_icons/facebook.png" alt="Facebook">
       </a>
-      <a href="https://wa.me/553799869601?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais" target="_blank">
+      <a href="https://wa.me/5537998696011?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais" target="_blank">
         <img src="../fotos_icons/whatsapp.png" alt="WhatsApp">
       </a>
     </div>
@@ -531,111 +497,52 @@
   </div>
 
   <script>
-
     const CATEGORIES = [
-
-      // DOCES 
       {
         id: 'doces',
         label: 'Doces',
         emoji: '🍫',
-        img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
+        img: '',
         products: [
-          {
-            name: 'DOCE 01',
-            desc: 'DOCE DE LEITE',
-            img: './main/foto_produtos/img.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          {
-            name: 'DOCE 02',
-            desc: 'DOCE DE COCO',
-            img: './main/foto_produtos/img.jpg'
-          },
-
-          {
-            name: 'DOCE 03',
-            desc: 'DOCE DE NINHO',
-            img: './main/foto_produtos/img.jpg'
-          },
-
-      
-
+          { name: 'DOCE 01', desc: 'DOCE DE LEITE', img: './main/foto_produtos/img.jpg' },
+          { name: 'DOCE 02', desc: 'DOCE DE COCO', img: './main/foto_produtos/img.jpg' },
+          { name: 'DOCE 03', desc: 'DOCE DE NINHO', img: './main/foto_produtos/img.jpg' }
         ]
       },
-
-      //  BOLOS 
       {
         id: 'bolos',
         label: 'Bolos',
         emoji: '🎂',
-        img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
+        img: '',
         products: [
-          {
-            name: 'BOLO 1',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/bolos/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          {
-            name: 'BOLO 2',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/bolos/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          {
-            name: 'BOLO 3',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/bolos/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          
-          // 
+          { name: 'BOLO 1', desc: 'Bolo de chocolate', img: './main/foto_produtos/bolos/foto.jpg' },
+          { name: 'BOLO 2', desc: 'Bolo de chocolate', img: './main/foto_produtos/bolos/foto.jpg' },
+          { name: 'BOLO 3', desc: 'Bolo de chocolate', img: './main/foto_produtos/bolos/foto.jpg' }
         ]
       },
-
-      //  SALGADOS 
       {
         id: 'salgados',
         label: 'Salgados',
         emoji: '🥐',
-        img: '', //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
+        img: '',
         products: [
-         {
-            name: 'SALGADO 1',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/salgados/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          {
-            name: 'SALGADO 2',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/salgados/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-
-          {
-            name: 'SALGADO 3',
-            desc: 'Bolo de chocolate',
-            img: './main/foto_produtos/salgados/foto.jpg' //espaço para colocar o link da imagem que está na pasta (codigo ainda não está 100%)
-          },
-          // 
+         { name: 'SALGADO 1', desc: 'Bolo de chocolate', img: './main/foto_produtos/salgados/foto.jpg' },
+         { name: 'SALGADO 2', desc: 'Bolo de chocolate', img: './main/foto_produtos/salgados/foto.jpg' },
+         { name: 'SALGADO 3', desc: 'Bolo de chocolate', img: './main/foto_produtos/salgados/foto.jpg' }
         ]
-      },
-
+      }
     ];
 
-    /* Renderização de categorias (Varre o array CATEGORIES e gera o HTML de cada card)*/
     function renderCategories() {
       document.getElementById('categories').innerHTML = CATEGORIES.map(cat => `
-    <div class="category-card" onclick="openModal('${cat.id}')">
-      <img src="${cat.img}" alt="${cat.label}" onerror="this.style.display='none'">
-      <div class="cat-label">${cat.label}</div>
-      <div class="arrow">›</div>
-    </div>
-  `).join('');
+        <div class="category-card" onclick="openModal('${cat.id}')">
+          <img src="${cat.img}" alt="${cat.label}" onerror="this.style.display='none'">
+          <div class="cat-label">${cat.label}</div>
+          <div class="arrow">›</div>
+        </div>
+      `).join('');
     }
 
-    /* Abre modal com produtos e filtra o produto correto pelo ID e preenche o grid interno*/
     function openModal(catId) {
       const cat = CATEGORIES.find(c => c.id === catId);
       document.getElementById('modalTitle').textContent = `${cat.emoji}  ${cat.label}`;
@@ -645,24 +552,23 @@
         grid.innerHTML = `<div class="empty-state"><span>${cat.emoji}</span>Em breve!</div>`;
       } else {
         grid.innerHTML = cat.products.map(p => `
-      <div class="product-card">
-        ${p.img
-            ? `<img src="${p.img}" alt="${p.name}" onerror="this.style.display='none'">`
-            : `<div class="no-img">${cat.emoji}</div>`}
-        <div class="product-info">
-          <h3>${p.name}</h3>
-          <div class="price">R$ ${p.price}</div>
-          ${p.desc ? `<div class="desc">${p.desc}</div>` : ''}
-        </div>
-      </div>
-    `).join('');
+          <div class="product-card">
+            ${p.img
+                ? `<img src="${p.img}" alt="${p.name}" onerror="this.style.display='none'">`
+                : `<div class="no-img">${cat.emoji}</div>`}
+            <div class="product-info">
+              <h3>${p.name}</h3>
+              <div class="price">R$ ${p.price}</div>
+              ${p.desc ? `<div class="desc">${p.desc}</div>` : ''}
+            </div>
+          </div>
+        `).join('');
       }
 
       document.getElementById('modalOverlay').classList.add('open');
       document.body.style.overflow = 'hidden';
     }
 
-    /*  Fecha modal */
     function closeModal() {
       document.getElementById('modalOverlay').classList.remove('open');
       document.body.style.overflow = '';

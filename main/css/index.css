@@ -49,7 +49,7 @@ main {
 .main_endereco {
     flex: 1;
     min-width: 250px;
-    color: var(--texto);
+    color: var(--text); /* BUG CORRIGIDO AQUI */
     border: var(--mostarda) solid 10px;
     border-radius: 8px;
     margin: 40px;

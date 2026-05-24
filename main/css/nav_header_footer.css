@@ -49,6 +49,7 @@ nav a::after {
     background-color: var(--mostarda);
     transform: scaleX(0); /* Oculta a linha por padrão */
     transition: transform 0.2s ease;
+    transform-origin: center;
 }
 
 /* Mostra a linha com efeito ao passar o mouse */

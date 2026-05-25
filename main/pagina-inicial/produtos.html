@@ -34,22 +34,19 @@
             margin: 0;
         }
         
-        .carrossel-track {
-            display: flex;
-            overflow-x: hidden;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-        }
-        
-        .carrossel-track img {
-            width: 100%;
-            flex: none;
-            scroll-snap-align: start;
-            display: block;
-            object-fit: cover;
-            height: 100vh;
-            min-height: 200px;
-        }
+      .carrossel-track {
+    display: flex;
+    width: 300%; /* 3 imagens */
+    transition: transform 0.5s ease;
+}
+
+.carrossel-track img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.4;
+    flex-shrink: 0;
+}
         
         .carrossel-overlay {
             position: absolute;
@@ -438,17 +435,17 @@
     <section class="carrossel-section">
         <div class="carrossel" id="carrossel">
             <div class="carrossel-track" id="track">
-                <img src="../foto_produtos/Fotos Diversas/IMG_1022 - Copia - Copia.jpg" alt="Produto 1">
-                <img src="../foto_produtos/Fotos Diversas/IMG_1016 - Copia - Copia.jpg" alt="Produto 2">
-                <img src="../foto_produtos/Fotos Diversas/IMG_1147 - Copia.jpg" alt="Produto 3">
+                <img src="../foto_produtos/Fotos Diversas/IMG_1022.jpg" alt="Produto 1">
+                <img src="../foto_produtos/Fotos Diversas/IMG_1016.jpg" alt="Produto 2">
+                <img src="../foto_produtos/Fotos Diversas/IMG_1147.jpg" alt="Produto 3">
             </div>
             <div class="carrossel-overlay"></div>
             <div class="carrossel-titulo">
                 <h1>Nossos Produtos</h1>
                 <p>Escolha uma categoria e veja todas as delícias disponíveis</p>
             </div>
-            <!-- <button class="carrossel-btn prev" id="prev">&#8249;</button> -->
-            <!--<button class="carrossel-btn next" id="next">&#8250;</button> -->
+           <button class="carrossel-btn prev" id="prev">&#8249;</button>
+<button class="carrossel-btn next" id="next">&#8250;</button>
             <div class="carrossel-dots" id="dots"></div>
         </div>
     </section>
@@ -494,57 +491,57 @@
     <script>
         const CATEGORIES = [{
             id: 'doces',
-            label: 'Doces',
+            label: 'DOCES',
             emoji: '🍫',
-            img: '', //adicionar qualquer imagem de doce
-            products: [{
-                name: 'DOCE 01',
-                desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/img.jpg'
-            }, {
-                name: 'DOCE 02',
-                desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/img.jpg'
-            }, {
-                name: 'DOCE 03',
-                desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/img.jpg'
-            }]
+            img: '../foto_produtos/Bom_BOM/CAPA1.jpg', //adicionar qualquer imagem de doce
+        products: [{
+    name: 'BOMBON',
+    desc: '',
+    img: '../foto_produtos/Bom_BOM/IMG_0326.jpg'
+}, {
+    name: 'CAIXA DE DOCINHOS',
+    desc: '',
+    img: '../foto_produtos/Caixa_De_docin/IMG_4319.jpg'
+}, {
+    name: 'CARAMELO',
+    desc: '',
+    img: '../foto_produtos/Fotos Diversas/CARAMELO.jpg'
+}]
         }, {
             id: 'bolos',
-            label: 'Bolos',
+            label: 'BOLOS',
             emoji: '🎂',
-            img: '', //adicionar qualquer imagem de bolo 
+            img: '../foto_produtos/BOLOS/CAPA2.jpg', //adicionar qualquer imagem de bolo 
             products: [{
                 name: 'BOLO 1',
                 desc: 'Cozinha Aventureira',
-                img: '../fotos_produtos/bolos/106300.jpg'
+                img: '../foto_produtos/Bolos_NU_pote/ALPINO_COM_COCO.jpg'
             }, {
                 name: 'BOLO 2',
                 desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/BOLOS/foto.jpg'
+                img: '../foto_produtos/Bolos_NU_pote/VERMELHA.jpg'
             }, {
                 name: 'BOLO 3',
                 desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/BOLOS/foto.jpg'
+                img: '../foto_produtos/Bolos_NU_pote/foto3.jpg'
             }]
         }, {
             id: 'salgados',
-            label: 'Salgados',
+            label: 'SALGADOS',
             emoji: '🥐',
-            img: '', //adicionar qualquer imagem de salgado
+            img: '../foto_produtos/Fotos Diversas/CAPA.jpg', //adicionar qualquer imagem de salgado
             products: [{
                 name: 'SALGADO 1',
                 desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/salgados/foto.jpg'
+                img: '../foto_produtos/salgados/foto.jpg'
             }, {
                 name: 'SALGADO 2',
                 desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/salgados/foto.jpg'
+                img: '../foto_produtos/salgados/foto.jpg'
             }, {
                 name: 'SALGADO 3',
                 desc: 'Cozinha Aventureira',
-                img: './main/foto_produtos/salgados/foto.jpg'
+                img: '../foto_produtos/salgados/foto.jpg'
             }]
         }];
 
@@ -594,7 +591,69 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    renderCategories();
+      renderCategories();
+
+    const track = document.getElementById('track');
+    const slides = document.querySelectorAll('.carrossel-track img');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const dotsContainer = document.getElementById('dots');
+
+    let currentIndex = 0;
+
+    slides.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.classList.add('dot');
+
+        if (index === 0) {
+            dot.classList.add('active');
+        }
+
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+        });
+
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}vw)`;
+
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+    }
+
+    function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        currentIndex++;
+
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex--;
+
+        if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
+
+        updateCarousel();
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    setInterval(nextSlide, 4000);
     </script>
 </body>
 

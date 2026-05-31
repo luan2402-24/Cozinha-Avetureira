@@ -84,6 +84,11 @@
 
 1 - Mudança no estilo dos icones do footer e mudança de cor das bordas da div na pagina inicial.
 
+31/05/2026
+
+1 - retirei o "Redes Sociais de todos os footer" pq ele era clicavel.
+
+2 - Mudei o elemento da nav que mantem a pagina atual marcada, agora ela fica selecionada em marrom.
 
 ---- PARTE FEITA POR LUAN ----
 

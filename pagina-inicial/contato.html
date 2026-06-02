@@ -20,8 +20,8 @@
     .hero {
       position: relative;
       background:
-        linear-gradient(rgba(248, 244, 239, 0.94),
-          rgba(248, 244, 239, 0.96)),
+        linear-gradient(rgba(248, 244, 239, 0.40),
+          rgba(248, 244, 239, 0.43)),
         url("../fotos_icons/banner_pg_ini.png");
       background-size: cover;
       background-position: center;
@@ -44,7 +44,7 @@
 
     .hero-mini-title {
       display: inline-block;
-      color: #b88444;
+      color: var(--marrom-escuro);
       font-size: 0.85rem;
       font-weight: 600;
       letter-spacing: 4px;
@@ -64,7 +64,7 @@
       margin: 0 auto;
       font-size: 1.15rem;
       line-height: 1.8;
-      color: #8a6233;
+      color: var(--marrom-medio);
     }
 
     /* ================= CONTATO ================= */
@@ -119,46 +119,19 @@
     }
 
     .contact-card p {
-      color: #7d5a35;
+      color: var(--marrom);
       font-size: 1rem;
       line-height: 1.8;
     }
 
     .contact-card a {
-      color: #7d5a35;
+      color: var(--marrom);
       text-decoration: none;
       transition: 0.3s;
     }
 
     .contact-card a:hover {
       color: var(--mostarda);
-    }
-
-    /* ================= FOOTER ================= */
-
-    footer {
-      background: #243a52;
-      padding: 45px 20px;
-      text-align: center;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 35px;
-      margin-bottom: 30px;
-    }
-
-    .footer-links a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: 0.3s;
-    }
-
-    .footer-links a:hover {
-      color: #f0c77b;
     }
 
     .social-icons {

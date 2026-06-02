@@ -90,6 +90,16 @@
 
 2 - Mudei o elemento da nav que mantem a pagina atual marcada, agora ela fica selecionada em marrom.
 
+02/06/2026
+
+1 - Alteração realizada no nav_header_footer.css para que assim no local onde se encontra a pagina inicial (class="active") seja selecionada e como já esta selecionada, caso o mouse passe por cima ele não tera animação de linha embaixo e escrita amarelada. 
+
+2 - As paginas sobre.html e contato.html se encontravam com a opacidade do banner muito baixa, dessa forma o mesmo foi aumentado para que dessa forma fique mais visível, assim dando uma melhor visibilidade.
+
+3 - As paginas sobre.html e contato.html se encontravam sem fazer o uso css padrão (utilizando um css local no html), dessa forma o mesmo foi removido e aplicado o css padrão dos arquivos global.css e nav_header_footer.css.
+
+4 - Algumas paginas se encontravam usando cores que estavam no root porem sem utiliza-lás como codigo var (--variavel de cor), dessa forma elas foram regularizadas.
+
 ---- PARTE FEITA POR LUAN ----
 
 27/04/26

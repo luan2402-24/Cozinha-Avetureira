@@ -562,19 +562,15 @@
             emoji: '🥐',
             img: '../foto_produtos/Fotos Diversas/CAPA.jpg', //adicionar qualquer imagem de salgado
             products: [{
-                name: 'SALGADO 1',
+                name: 'Pão Integral',
                 desc: 'Cozinha Aventureira',
-                img: '../foto_produtos/salgados/foto.jpg'
+                img: '../foto_produtos/Salgado/integral.jpeg'
             }, {
-                name: 'SALGADO 2',
+                name: 'Pão Australiano',
                 desc: 'Cozinha Aventureira',
-                img: '../foto_produtos/salgados/foto.jpg'
-            }, {
-                name: 'SALGADO 3',
-                desc: 'Cozinha Aventureira',
-                img: '../foto_produtos/salgados/foto.jpg'
-            }]
-        }];
+                img: '../foto_produtos/Salgado/australiano.jpeg'
+            }, ]
+                }];
 
         function renderCategories() {
             document.getElementById('categories').innerHTML = CATEGORIES.map(cat => `
@@ -620,8 +616,7 @@
     document.body.style.overflow = 'hidden';
 }
 
-      document.getElementById('modalOverlay').classList.add('open');
-      document.body.style.overflow = 'hidden';
+      
 
 
     function closeModal() {

@@ -147,3 +147,33 @@ footer {
     border-radius: 50%;
     object-fit: cover;
 }
+/* ================= RESPONSIVIDADE DO HEADER ================= */
+
+@media (max-width: 768px) {
+    header {
+        height: auto;               /* Remove a altura fixa de 100px */
+        padding: 15px 20px;         /* Diminui o espaçamento interno */
+        flex-direction: column;     /* Empilha a logo e o menu verticalmente */
+        gap: 15px;                  /* Dá um espaço entre a logo e os links */
+    }
+
+    .logo-icon {
+        width: 60px;                /* Reduz um pouco o tamanho do círculo da logo */
+        height: 60px;
+    }
+
+    nav {
+        gap: 20px;                  /* Diminui o espaço entre os links no celular */
+        flex-wrap: wrap;            /* Se faltar espaço horizontal, os links quebram linha */
+        justify-content: center;    /* Centraliza os links na tela */
+    }
+
+    nav a {
+        font-size: 16px;            /* Reduz levemente o tamanho da fonte */
+        padding: 4px 0;
+    }
+
+    nav a.active {
+        padding: 2px 8px;           /* Ajusta o box do menu ativo para telas menores */
+    }
+}

@@ -20,6 +20,8 @@
     /* remove espaçamento interno padrão */
     box-sizing: border-box;
     /* facilita cálculo de tamanho */
+    cursor: default;
+    /* define cursor padrão */
 }
 
 body {

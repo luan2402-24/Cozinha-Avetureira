@@ -45,6 +45,7 @@ main {
 }
 
 .main_endereco {
+    cursor: default;
     flex: 1;
     min-width: 250px;
     font-family: 'Playfair Display', serif;

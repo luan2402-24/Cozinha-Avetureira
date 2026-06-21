@@ -21,6 +21,17 @@
     box-sizing: border-box;
     /* facilita cálculo de tamanho */
 }
+/*(remove estilos padrão do navegador) */
+* {
+    margin: 0;
+    /* remove margem padrão */
+    padding: 0;
+    /* remove espaçamento interno padrão */
+    box-sizing: border-box;
+    /* facilita cálculo de tamanho */
+    cursor: default;
+    /* define cursor padrão */
+}
 
 body {
     font-family: 'DM Sans', sans-serif;
